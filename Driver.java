@@ -33,7 +33,7 @@ public class Driver {
         for(int i = 0; i < size; i++){
             System.out.print(a[i]+"\t");
         }*/
-            //System.out.println("kth Term: " + a[kth]);
+            System.out.println("kth Term: " + a[kth]);
 
 
             double end = System.nanoTime();
@@ -42,7 +42,7 @@ public class Driver {
             /*
              * WRITES TIMES TO TEXT FILE FOR CALCULATION PURPOSES
              */
-            File testData = new File("src/testData.txt");
+            File testData = new File("testData.txt");
             FileWriter writeTo = new FileWriter(testData, true);
             BufferedWriter writeThis = new BufferedWriter(writeTo);
             writeThis.append("\n" + Double.toString(end - start));
